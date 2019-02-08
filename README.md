@@ -1,4 +1,4 @@
-# Random Quote Machine
+# Random Quote Machine - [DEMO](https://LaurelineP.github.io/Quote-Machine)
 ## Description
 Create a random quote machine.
 ![Preview](./project-preview.png)
