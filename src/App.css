@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Montserrat';
+}
+
+*:focus {
+  outline: none;
+}
+
+.fab {
+  color: white;
+  font-size: 25px;
+  background: #282c34;
+  padding: 11px;
+  border-radius: 5px;
+  position: relative;
+  top: 5px;
+}
+
+.fas#right {
+  padding: 30px;
+  margin: calc(2.5em) 20px;
+}
+
+.fas#left {
+  padding: 30px;
+  margin: calc(1em) 20px;
+}
+
+
 .App {
   background-color: #282c34;
   text-align: center;
@@ -9,7 +41,7 @@
 }
 
 #quote-box {
-  height: 300px;
+  height: 350px;
   width: 700px;
   border-radius: 5px;
   box-shadow: 0 1px 5px 1px #111;
@@ -21,32 +53,73 @@
   justify-content: space-between;
 }
 
+#quotes-icons-container {
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: 3em;
+  mix-blend-mode: multiply;
+  position: absolute;
+  width: 700px;
+  pointer-events: none;
+}
+
+
 #quote-content {
-  margin: 10% 0 0 0;
+  margin: auto;
+  padding-top: 50px;
+  
 }
 
-/* #quote-text {
+#texts-content{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  mix-blend-mode: multiply;
 }
 
-#quote-author {
-  display: flex;
-  justify-content: flex-end;
-  margin: 20px;
-  position: relative;
+#text {
+  max-width: 400px;
+  margin-top: calc(10% - 60px)
+}
+
+#author {
+  text-align: right;
+  margin: 20px -30px 0 0;
   font-style: italic;
 }
 
-.buttons-container {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-} */
+#author:before {
+    content: '- ';
+}
 
-button {
-  padding:15px;
-  border-radius: 2px;
+#text {
+  max-width: 400px;
+  margin: auto;
+}
+
+button#new-quote {
+  border-radius: 5px;
+  font-size: 0.85em;
+  padding: 15px;
+  margin-left: 15px;
+  background: #282c34;
   border: unset;
-  box-shadow: 1px 1px 3px 1px #CCC;
+  color: #FFF;
+}
+
+.buttons-container {
+  margin-bottom: 30px;
+}
+
+#icon-twitter, #new-quote {
+  transition: transform 0.05s ease-in;
+}
+#icon-twitter:hover, #new-quote:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+footer {
+  margin: 10px
 }
